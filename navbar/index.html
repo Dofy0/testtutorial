@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <nav>
+        <ul class = "sidebar">
+            <li onclick= closesidebar()><a href = "#" >X</a></li>
+            <li><a href = "#">Blog</a></li>
+            <li><a href = "#">Product</a></li>
+            <li><a href = "#">About</a></li>
+            <li><a href = "#">Furom</a></li>
+            <li><a href = "#">Login</a></li>
+        </ul>
+        <ul class = "hg">
+            <li><a href = "#">Roen225</a></li>
+            <li class = "hideonMoblie"><a href = "#">Blog</a></li>
+            <li class = "hideonMoblie"><a href = "#">Product</a></li>
+            <li class = "hideonMoblie"><a href = "index2.html">About</a></li>
+            <li class = "hideonMoblie"><a href = "#">Furom</a></li>
+            <li class = "hideonMoblie"><a href = "http://localhost/rer/">Login</a></li>
+            <li onclick=showsidebar()><a href = "#"> ##</a></li>
+        </ul>
+    </nav>
+    <div id = "body-div">
+
+    </div>
+    <div id = "sec-div">
+    
+    </div>
+    <Script>
+        function showsidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function closesidebar(){
+           const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </Script>
+</body>
+</html>
